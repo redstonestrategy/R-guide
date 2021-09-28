@@ -5,7 +5,7 @@
 \title{Make plot RSG theme}
 \usage{
 rsgtheme(
-  rsg_colors = c("#9D9999", "#E2D192", "#C55A11", "#3C485E", "#46566E", "#5C7292",
+  rsg_colors = c("#9D9999", "#C55A11", "#E2D192", "#3C485E", "#46566E", "#5C7292",
     "#F6BA92", "#F3EDD3", "#BCC6D5", "#595959", "#075861"),
   input_layout = "clean"
 )
