@@ -64,6 +64,8 @@ summarized_diamonds <-
   ) %>% 
   dplyr::filter(count > 10)
 
+summarized_diamonds
+
 ```
 
 
