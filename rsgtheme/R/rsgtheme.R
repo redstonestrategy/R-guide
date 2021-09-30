@@ -16,6 +16,6 @@ rsgtheme <- function (rsg_colors = c("#9D9999", "#C55A11", "#E2D192", "#3C485E",
 
   ggthemr::ggthemr(rsg_theme, layout = input_layout)
 
-  ggplot2::theme_update(text = ggplot2::element_text(family = "Avenir"))
+  ggplot2::theme_update(text = ggplot2::element_text(family = "Times"))
 
 }
