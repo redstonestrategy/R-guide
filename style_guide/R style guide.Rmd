@@ -39,9 +39,11 @@ R Markdown (.Rmd) files. These files are best when conducting analyses that can 
 
 R is a high-level programming language used primarily for statistical computing and graphics. The goal of the R Programming Style Guide is to make our R code easier to read, share, and verify.
 
-Redstone follows Google's R Programming Style Guide, found here: https://google.github.io/styleguide/Rguide.html. This style guide draws on work from Hadley Wickham's tidyverse style guide, found here: https://style.tidyverse.org/. 
+Redstone follows Google's R Programming Style Guide, found here: https://google.github.io/styleguide/Rguide.html. This style guide draws on work from Hadley Wickham's tidyverse style guide, found here: https://style.tidyverse.org/. Additionally, Redstone suggests two additional norms:
+* Use the prefix "input_" for  user-defined function inputs, so that it's easy to identify inputs in the function body
+* Use the prefix "global_" for any objects that are subsequently called in functions from the global environment (rather than as an input)
 
-The example below demonstrates an application of the style guide. Notice in the code that all functions (for example, aes(), geom_point()) are called from the package (using the syntax "ggplot2::"). Those with experience in R may be tempted to simply load the ggplot2 library, thereby eliminating the need to call every function from the ggplot2 package. However, the Google R Style Guide recommends the approach below because it accounts for cases where multiple packages have functions with the same name (creaating confusion in R as to which function R should call).
+The example below demonstrates an application of the style guide. Notice in the code that all functions (for example, aes(), geom_point()) are called from the package (using the syntax "ggplot2::"). Those with experience in R may be tempted to simply load the ggplot2 library, thereby eliminating the need to call every function from the ggplot2 package. However, the Google R Style Guide recommends the approach below because it accounts for cases where multiple packages have functions with the same name (creating confusion in R as to which function R should call).
 
 ```{r}
 # load the diamonds dataset, included in the ggplot package
@@ -61,6 +63,8 @@ summarized_diamonds <-
     count = dplyr::n()
   ) %>% 
   dplyr::filter(count > 10)
+
+summarized_diamonds
 
 ```
 
