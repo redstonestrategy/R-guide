@@ -279,7 +279,7 @@ A few additional visual style adjustments are required for cleanliness and legib
 * Grid lines- based on the specific visual and/or personal preference
 * Font size - this may requires some trial and error (i.e., reviewing the visual produced when saved to a picture, as detailed in the next section) to identify the best size, and will vary based on the application (e.g., a powerpoint vs. memo)
 * Legend position - based on application and/or personal preference
-* Labels - to clean up the existing text, add a title/caption/subtitle, etc.
+* Labels - to clean up the existing text, add a title/caption/subtitle, etc.a
 
 We can add additional adjustments to this plot using the theme() and labs() function in ggplot:
 
